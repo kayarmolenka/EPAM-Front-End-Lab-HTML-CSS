@@ -1,0 +1,20 @@
+.header {
+    background: url("https://i.ibb.co/HBtJ4rQ/top-1X.png") center / cover no-repeat;
+    width: 100%;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 15px;
+        padding: 43px 146px 442px 80px;
+        &_logo {
+            font-size: 18px;
+            color: #60606e;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            width: 58px;
+            height: 14px;
+            max-width: 1300px;
+            max-height: 500px;
+        }
+    }
+}

@@ -3,3 +3,19 @@
     margin: 0;
     padding: 0;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-auto-rows: 1fr auto; */
+    grid-template-areas:
+        "header header"
+        "main main"
+        "article4 article4"
+        "footer footer";
+}
+
+@import "header";
+@import "main";
+@import "article4";
+@import "footer";
