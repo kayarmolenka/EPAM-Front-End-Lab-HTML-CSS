@@ -5,6 +5,7 @@
     .newspost_wrapper {
         display: flex;
         align-items: center;
+        justify-content: space-around;
         &_invitation {
             color: #ffffff;
             font-size: 30px;
