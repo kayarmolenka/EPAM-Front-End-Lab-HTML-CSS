@@ -11,6 +11,9 @@
             max-width: 573px;
             .footer_nav_links {
                 display: flex;
+                @media (max-width: 1200px) {
+                    display: block;
+                }
                 a {
                     text-decoration: none;
                     color: #9a9a9a;
@@ -49,5 +52,23 @@
                 color: #7beec7;
             }
         }
+    }
+}
+
+@media (max-width: 680px) {
+    .footer_content_nav .footer_nav_links :not(:first-of-type)::before {
+        content: none;
+    }
+    .footer {
+        padding: 50px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 411px) {
+    .footer_content {
+        max-height: 130px;
+    }
+    .footer_content_creator {
+        font-size: 11px;
     }
 }

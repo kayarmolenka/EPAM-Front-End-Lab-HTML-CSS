@@ -2,10 +2,18 @@
     grid-area: article4;
     background: #7beec7;
     max-height: 331px;
+    @media (max-width: 1040px) {
+        max-height: 1040px;
+        background: none;
+    }
     .newspost_wrapper {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        @media (max-width: 1040px) {
+            align-items: center;
+            flex-direction: column;
+        }
         &_invitation {
             color: #ffffff;
             font-size: 30px;
@@ -13,6 +21,14 @@
             max-width: 1305px;
             max-height: 331px;
             padding: 51px 105px 130px 79px;
+            @media (max-width: 1270px) {
+                font-size: 24px;
+                background: #7beec7;
+                margin-bottom: 50px;
+            }
+            @media (max-width: 1000px) {
+                font-size: 28px;
+            }
             &_header {
                 max-width: 487px;
                 max-height: 71px;
@@ -41,18 +57,42 @@
         &_block {
             max-width: 1305px;
             max-height: 331px;
-            padding: 50px 0px 50px 97px;
+            @media (max-width: 1300px) {
+                padding-right: 49px;
+            }
+            @media (max-width: 1040px) {
+                background: #7beec7;
+                padding: 63px 56px 36px 55px;
+            }
+            @media (max-width: 626px) {
+                max-height: 550px;
+                padding: 63px 8px 36px 9px;
+            }
+            @media (max-width: 311px) {
+                padding: 63px 45px 36px 45px;
+            }
         }
         &_newsletters {
             background: #ffffff;
             max-width: 557px;
             max-height: 231px;
+            @media (max-width: 565px) {
+                max-width: 466px;
+                max-height: 297px;
+            }
+            @media (max-width: 411px) {
+                max-width: 320px;
+            }
             &_header {
                 color: #60606e;
                 font-family: "Montserrat", sans-serif;
                 font-weight: bold;
                 font-size: 24px;
                 padding: 21px 195px 0px 26px;
+                @media (max-width: 411px) {
+                    font-size: 13px;
+                    padding-right: 27px;
+                }
                 &_text {
                     font-family: "Open Sans", sans-serif;
                     font-size: 16px;
@@ -64,6 +104,9 @@
                     align-items: flex-end;
                     max-height: 51px;
                     padding: 0px 26px 18px 20px;
+                    @media (max-width: 411px) {
+                        padding: 0px 6px 18px 6px;
+                    }
                     input {
                         padding: 23px 0px 19px 20px;
                         width: 375px;

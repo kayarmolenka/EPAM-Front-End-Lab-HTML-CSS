@@ -1,5 +1,8 @@
 .aside {
     grid-area: aside;
+    @media (max-width: 1060px) {
+        display: none;
+    }
     &_wrapper {
         max-width: 265px;
         padding: 149px 0px 0px 193px;

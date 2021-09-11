@@ -20,6 +20,9 @@
         &_menu {
             padding-right: 146px;
             height: 20px;
+            @media (max-width: 520px) {
+                padding-right: 30px;
+            }
         }
         &_menu:hover {
             cursor: pointer;

@@ -13,6 +13,9 @@
         "main main"
         "article4 article4"
         "footer footer";
+    @media (max-width: 411px) {
+        grid-template-columns: 411px;
+    }
 }
 
 @import "header";
