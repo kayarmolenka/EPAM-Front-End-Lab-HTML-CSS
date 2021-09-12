@@ -103,10 +103,9 @@
                     height: 90px;
                     padding-bottom: 10px;
                 }
-                // img:hover {
-                //     transition: 0.5s;
-                //     transform: scale(1.5);
-                // }
+                &_image {
+                    max-width: 81px;
+                }
                 &_description {
                     padding-left: 17px;
                     &_header {

@@ -18,6 +18,13 @@
     @media (max-width: 411px) {
         grid-template-columns: 411px;
     }
+    @media (max-width: 320px) {
+        grid-template-columns: 320px;
+    }
+    //ie11
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    // -ms-grid-rows: auto 20px auto 20px auto;
 }
 
 @import "header";
