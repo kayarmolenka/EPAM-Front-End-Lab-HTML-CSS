@@ -1,0 +1,143 @@
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "article1 aside"
+        "article2 aside"
+        "article3 aside";
+
+    display: -ms-flexbox;
+    @media (max-width: 1060px) {
+        display: flex;
+    }
+    &_wrapper_articles {
+        h2 {
+            font-size: 18px;
+        }
+        padding: 149px 0px 0px 79px;
+        @media (max-width: 520px) {
+            padding: 149px 10px 0px 10px;
+        }
+        @media (max-width: 411px) {
+            width: 411px;
+        }
+        @media (max-width: 320px) {
+            max-width: 320px;
+        }
+        &_image {
+            min-width: 752px;
+            min-height: 502px;
+            padding-bottom: 29px;
+            @media (max-width: 1300px) {
+                min-width: 500px;
+                min-height: 250px;
+            }
+            @media (max-width: 520px) {
+                min-width: 429px;
+                min-height: 250px;
+            }
+            @media (max-width: 411px) {
+                min-width: 350px;
+            }
+            @media (max-width: 320px) {
+                max-width: 320px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                @media (max-width: 320px) {
+                    max-width: 320px;
+                }
+            }
+        }
+        &_block_end {
+            padding-bottom: 152px;
+        }
+        .article1 {
+            grid-area: article1;
+            max-width: 752px;
+            max-height: 937px;
+        }
+        .article2 {
+            grid-area: article2;
+            padding-top: 101px;
+            max-width: 752px;
+            max-height: 937px;
+        }
+        .article3 {
+            grid-area: article3;
+            padding-top: 101px;
+            max-width: 752px;
+            max-height: 937px;
+        }
+        &_block_form {
+            padding-bottom: 20px;
+            max-height: 31px;
+            .fa-comment-dots {
+                color: #cccccc;
+                font-size: 18px;
+                padding: 9px 4px 6px 9px;
+            }
+            .fa-comment-dots:hover {
+                color: $primary-color;
+                cursor: pointer;
+            }
+            .fa-heart {
+                color: #ea6a6a;
+                font-size: 18px;
+                padding: 10px 3px 7px 13px;
+            }
+            .fa-heart:hover {
+                color: $primary-color;
+                cursor: pointer;
+            }
+            .count_comment,
+            .count_liked {
+                color: #cccccc;
+                font-size: 14px;
+                font-family: "Montserrat", sans-serif;
+                padding: 10px 0px 10px 0px;
+            }
+            button {
+                background: $primary-color;
+                color: #ffffff;
+                @include font(14px);
+                border: none;
+                padding: 11px 23px 8px 16px;
+            }
+            button:hover {
+                background: #00c51b;
+                cursor: pointer;
+                color: blueviolet;
+            }
+        }
+        &_block_header {
+            padding-bottom: 21px;
+            padding-top: 20px;
+            color: #60606e;
+            font-size: 18px;
+            font-family: "Montserrat", sans-serif;
+            max-width: 399px;
+        }
+        &_block_text {
+            padding-bottom: 30px;
+            color: #999999;
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+        }
+        &_block_link {
+            color: #60606e;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            a {
+                text-decoration: none;
+                color: #60606e;
+            }
+
+            a:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
