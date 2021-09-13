@@ -250,12 +250,8 @@
                 padding-top: 49px;
             }
             &_containerbtn {
-                display: grid;
-                grid-template-columns: max-content;
-                grid-template-rows: 1fr 1fr 1fr;
+                display: flex;
                 padding-top: 30px;
-                grid-column-gap: 4px;
-                grid-row-gap: 4px;
                 button {
                     color: #999999;
                     font-size: 12px;
@@ -274,22 +270,30 @@
                 &_btn1 {
                     background: #e5e5e5;
                     width: 68px;
+                    margin-bottom: 4px;
                 }
                 &_btn2 {
                     background: #e5e5e5;
                     width: 100px;
+                    margin-bottom: 4px;
+                    margin-left: -10px;
                 }
                 &_btn3 {
                     background: #e5e5e5;
                     width: 89px;
+                    margin-bottom: 39px;
+                    margin-left: -10px;
                 }
                 &_btn4 {
                     background: #e5e5e5;
                     width: 78px;
+                    margin-bottom: 4px;
+                    margin-right: 4px;
                 }
                 &_btn5 {
                     background: #e5e5e5;
                     width: 104px;
+                    margin-bottom: 4px;
                 }
                 &_btn6 {
                     background: #e5e5e5;
@@ -298,10 +302,12 @@
                 &_btn7 {
                     background: #e5e5e5;
                     width: 100px;
+                    margin-left: -10px;
                 }
                 &_btn8 {
                     background: #e5e5e5;
                     width: 89px;
+                    margin-left: -10px;
                 }
             }
         }

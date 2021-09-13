@@ -13,12 +13,14 @@
             font-size: 18px;
             color: #60606e;
             font-family: "Montserrat", sans-serif;
-            font-weight: bold;
             width: 58px;
             height: 14px;
             max-width: 1300px;
             max-height: 500px;
             padding-left: 80px;
+            h1 {
+                font-size: 18px;
+            }
         }
         &_menu {
             padding-right: 146px;

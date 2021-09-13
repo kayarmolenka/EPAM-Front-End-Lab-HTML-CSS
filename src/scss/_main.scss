@@ -12,6 +12,9 @@
         display: flex;
     }
     &_wrapper_articles {
+        h2 {
+            font-size: 18px;
+        }
         padding: 149px 0px 0px 79px;
         @media (max-width: 520px) {
             padding: 149px 10px 0px 10px;
@@ -117,7 +120,6 @@
             color: #60606e;
             font-size: 18px;
             font-family: "Montserrat", sans-serif;
-            font-weight: bold;
             max-width: 399px;
         }
         &_block_text {
@@ -140,4 +142,8 @@
             }
         }
     }
+}
+
+h2 {
+    font-size: 18px;
 }

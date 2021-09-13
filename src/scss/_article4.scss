@@ -36,6 +36,9 @@
             &_header {
                 max-width: 487px;
                 max-height: 71px;
+                h2 {
+                    font-size: 30px;
+                }
                 @media (max-width: 320px) {
                     max-height: 320px;
                 }
@@ -82,7 +85,9 @@
         &_newsletters {
             background: #ffffff;
             max-width: 557px;
-            max-height: 231px;
+            // max-height: 231px;
+            display: flex;
+            flex-direction: column;
             @media (max-width: 565px) {
                 max-width: 466px;
                 max-height: 297px;
@@ -104,12 +109,11 @@
                     font-family: "Open Sans", sans-serif;
                     font-size: 16px;
                     color: #999999;
-                    padding: 18px 27px 42px 27px;
+                    padding: 18px 0px 28px 27px;
                 }
                 &_form {
                     display: flex;
                     align-items: flex-end;
-                    max-height: 51px;
                     padding: 0px 26px 18px 20px;
                     @media (max-width: 411px) {
                         padding: 0px 6px 18px 6px;
