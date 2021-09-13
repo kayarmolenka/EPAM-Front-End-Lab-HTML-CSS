@@ -22,7 +22,7 @@
                     text-transform: uppercase;
                 }
                 a:hover {
-                    color: #7beec7;
+                    color: $primary-color;
                 }
                 :not(:first-of-type)::before {
                     content: "-";
@@ -49,7 +49,7 @@
             color: #999999;
             margin-left: 18px;
             :hover {
-                color: #7beec7;
+                color: $primary-color;
             }
         }
     }

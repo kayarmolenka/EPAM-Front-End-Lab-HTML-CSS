@@ -58,10 +58,10 @@
                     text-transform: uppercase;
                     font-weight: bold;
                     padding: 15px 14px 20px 20px;
-                    border-bottom: 2px solid #7beec7;
+                    border-bottom: 2px solid $primary-color;
                 }
                 &_latest:hover {
-                    background: #7beec7;
+                    background: $primary-color;
                     cursor: pointer;
                 }
                 &_popular {
@@ -74,7 +74,7 @@
                     border-bottom: 2px solid #e6e6e6;
                 }
                 &_popular:hover {
-                    background: #7beec7;
+                    background: $primary-color;
                     cursor: pointer;
                 }
                 &_comments {
@@ -87,7 +87,7 @@
                     border-bottom: 2px solid #e6e6e6;
                 }
                 &_comments:hover {
-                    background: #7beec7;
+                    background: $primary-color;
                     cursor: pointer;
                 }
             }
@@ -141,7 +141,7 @@
                 &_business {
                     width: 263px;
                     :hover {
-                        background: #7beec7;
+                        background: $primary-color;
                         opacity: 0.5;
                     }
                     &_link {
@@ -164,7 +164,7 @@
                 &_photography {
                     width: 263px;
                     :hover {
-                        background: #7beec7;
+                        background: $primary-color;
                         opacity: 0.5;
                     }
                     &_link {
@@ -189,7 +189,7 @@
                 &_journal {
                     width: 263px;
                     :hover {
-                        background: #7beec7;
+                        background: $primary-color;
                         opacity: 0.5;
                     }
                     &_link {
@@ -214,7 +214,7 @@
                 &_webdevlopment {
                     width: 263px;
                     :hover {
-                        background: #7beec7;
+                        background: $primary-color;
                         opacity: 0.5;
                     }
                     &_link {
@@ -262,7 +262,7 @@
                     height: 31px;
                 }
                 button:hover {
-                    background: #7beec7;
+                    background: $primary-color;
                     cursor: pointer;
                     transition: 0.5s;
                     transform: scale(1.5);
@@ -324,7 +324,7 @@
                 &_business {
                     width: 263px;
                     :hover {
-                        background: #7beec7;
+                        background: $primary-color;
                         opacity: 0.5;
                     }
                     &_link {
@@ -347,7 +347,7 @@
                 &_photography {
                     width: 263px;
                     :hover {
-                        background: #7beec7;
+                        background: $primary-color;
                         opacity: 0.5;
                         animation-name: example;
                         animation-duration: 6s;
@@ -391,7 +391,7 @@
                 &_journal {
                     width: 263px;
                     :hover {
-                        background: #7beec7;
+                        background: $primary-color;
                         opacity: 0.5;
                     }
                     &_link {
@@ -416,7 +416,7 @@
                 &_webdevlopment {
                     width: 263px;
                     :hover {
-                        background: #7beec7;
+                        background: $primary-color;
                         opacity: 0.5;
                     }
                     &_link {
