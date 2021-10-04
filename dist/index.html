@@ -14,12 +14,14 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header_wrapper">
-          <div class="header_wrapper_logo"><h1>AKAD.</h1></div>
-          <div class="header_wrapper_menu">
-            <div class="header_wrapper_burger"></div>
-            <div class="header_wrapper_burger2"></div>
-            <div class="header_wrapper_burger3"></div>
+        <div class="header-wrapper">
+          <div class="header-wrapper__logo">
+            <a class="header-wrapper__logo__link" href="#"><h1>AKAD.</h1></a>
+          </div>
+          <div class="header-wrapper__menu">
+            <div class="header-wrapper__menu_burger-first"></div>
+            <div class="header-wrapper__menu_burger-second"></div>
+            <div class="header-wrapper__menu_burger-third"></div>
           </div>
         </div>
       </header>
@@ -373,68 +375,126 @@
           </div>
         </aside>
       </main>
-      <article class="article_newspost">
-        <div class="newspost_wrapper">
-          <div class="newspost_wrapper_invitation">
-            <div class="newspost_wrapper_invitation_header">
-              <h2>YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h2>
+      <article class="article-newspost">
+        <div class="article-newspost__wrapper">
+          <div class="article-newspost__wrapper__invitation">
+            <div class="article-newspost__wrapper__invitation__header">
+              <h2 class="article-newspost__wrapper__invitation__header-text">
+                YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
+              </h2>
             </div>
-            <div class="newspost_wrapper_invitation_header_btn">
-              <button>get in touch</button>
+            <div class="article-newspost__wrapper__invitation__btn">
+              <button class="article-newspost__wrapper__invitation__btn-item">
+                get in touch
+              </button>
             </div>
           </div>
-          <div class="newspost_wrapper_block">
-            <div class="newspost_wrapper_newsletters">
-              <div class="newspost_wrapper_newsletters_header">
+          <div class="article-newspost__wrapper__block">
+            <div class="article-newspost__wrapper__block__newsletters">
+              <p class="article-newspost__wrapper__block__newsletters-header">
                 STAY INFORMED WITH OUR NEWSLETTER
-              </div>
-              <div class="newspost_wrapper_newsletters_header_text">
+              </p>
+              <p class="article-newspost__wrapper__block__newsletters-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-              <div class="newspost_wrapper_newsletters_header_form">
-                <input type="text" placeholder="your email" />
-                <button>send</button>
+              </p>
+              <div class="article-newspost__wrapper__block__newsletters-form">
+                <input
+                  class="
+                    article-newspost__wrapper__block__newsletters-form__input
+                  "
+                  type="text"
+                  placeholder="your email"
+                />
+                <button
+                  class="
+                    article-newspost__wrapper__block__newsletters-form__btn
+                  "
+                >
+                  send
+                </button>
               </div>
             </div>
           </div>
         </div>
       </article>
       <footer class="footer">
-        <div class="footer_content">
-          <div class="footer_content_nav">
-            <ul class="footer_nav_links">
+        <div class="footer-upper">
+          <div class="footer-upper__nav">
+            <ul class="footer-upper__nav__links">
               <li>
-                <a href="#" target="_blank">Home</a>
+                <a
+                  class="footer-upper__nav__links__link-item"
+                  href="#"
+                  target="_blank"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="#" target="_blank">about us</a>
+                <a
+                  class="footer-upper__nav__links__link-item"
+                  href="#"
+                  target="_blank"
+                  >about us</a
+                >
               </li>
               <li>
-                <a href="#" target="_blank">services</a>
+                <a
+                  class="footer-upper__nav__links__link-item"
+                  href="#"
+                  target="_blank"
+                  >services</a
+                >
               </li>
               <li>
-                <a href="#" target="_blank">portfolio</a>
+                <a
+                  class="footer-upper__nav__links__link-item"
+                  href="#"
+                  target="_blank"
+                  >portfolio</a
+                >
               </li>
               <li>
-                <a href="#" target="_blank">blog</a>
+                <a
+                  class="footer-upper__nav__links__link-item"
+                  href="#"
+                  target="_blank"
+                  >blog</a
+                >
               </li>
               <li>
-                <a href="#" target="_blank">contact us</a>
+                <a
+                  class="footer-upper__nav__links__link-item"
+                  href="#"
+                  target="_blank"
+                  >contact us</a
+                >
               </li>
             </ul>
           </div>
-          <div class="footer_content_creator">
+          <div class="footer-upper__creator">
             Created by akhouad 2016. All Rights Reserved
           </div>
         </div>
-        <div class="footer_content2">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
-          <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <div class="footer-lower">
+          <a class="footer-lower__link" href="#"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a class="footer-lower__link" href="#"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a class="footer-lower__link" href="#"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a class="footer-lower__link" href="#"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a class="footer-lower__link" href="#"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+          <a class="footer-lower__link" href="#"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
         </div>
       </footer>
     </div>

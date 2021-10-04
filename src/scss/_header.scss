@@ -3,13 +3,13 @@
     @media (max-width: 320px) {
         max-width: 321px;
     }
-    &_wrapper {
+    &-wrapper {
         display: flex;
         justify-content: space-between;
         height: 500px;
         width: 100%;
         padding-top: 43px;
-        &_logo {
+        &__logo {
             font-size: 18px;
             color: #60606e;
             font-family: "Montserrat", sans-serif;
@@ -18,34 +18,41 @@
             max-width: 1300px;
             max-height: 500px;
             padding-left: 80px;
+            &__link {
+                color: #60606e;
+                text-decoration: none;
+                :hover {
+                    color: $primary-color;
+                }
+            }
             h1 {
                 font-size: 18px;
             }
         }
-        &_menu {
+        &__menu {
             padding-right: 146px;
             height: 20px;
             @media (max-width: 520px) {
                 padding-right: 30px;
             }
-        }
-        &_menu:hover {
-            cursor: pointer;
-        }
-        &_burger {
-            border-bottom: 1px solid black;
-            width: 31px;
-            height: 6px;
-        }
-        &_burger2 {
-            border-bottom: 1px solid black;
-            width: 15px;
-            height: 6px;
-        }
-        &_burger3 {
-            border-bottom: 1px solid black;
-            width: 23px;
-            height: 6px;
+            :hover {
+                cursor: pointer;
+            }
+            &_burger-first {
+                border-bottom: 1px solid black;
+                width: 31px;
+                height: 6px;
+            }
+            &_burger-second {
+                border-bottom: 1px solid black;
+                width: 15px;
+                height: 6px;
+            }
+            &_burger-third {
+                border-bottom: 1px solid black;
+                width: 23px;
+                height: 6px;
+            }
         }
     }
 }

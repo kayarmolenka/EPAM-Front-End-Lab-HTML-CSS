@@ -1,4 +1,4 @@
-.article_newspost {
+.article-newspost {
     grid-area: article_newspost;
     background: $primary-color;
     max-height: 331px;
@@ -6,7 +6,7 @@
         max-height: 1040px;
         background: none;
     }
-    .newspost_wrapper {
+    &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -18,7 +18,7 @@
             align-items: start;
             flex-direction: column;
         }
-        &_invitation {
+        &__invitation {
             color: #ffffff;
             font-size: 30px;
             font-family: "Montserrat", sans-serif;
@@ -33,35 +33,35 @@
             @media (max-width: 1000px) {
                 font-size: 28px;
             }
-            &_header {
+            &__header {
                 max-width: 487px;
                 max-height: 71px;
-                h2 {
+                &-text {
                     font-size: 30px;
                 }
                 @media (max-width: 320px) {
                     max-height: 320px;
                 }
-                &_btn {
-                    button {
-                        background: #ffffff;
-                        width: 166px;
-                        height: 50px;
-                        color: $primary-color;
-                        padding: 21px 32px 18px 32px;
-                        border: none;
-                        margin-top: 28px;
-                        @include font(14px);
-                    }
-                    button:hover {
-                        cursor: pointer;
-                        background: #05c8f8;
-                        color: #ffffff;
-                    }
+            }
+            &__btn {
+                &-item {
+                    background: #ffffff;
+                    width: 166px;
+                    height: 50px;
+                    color: $primary-color;
+                    padding: 21px 32px 18px 32px;
+                    border: none;
+                    margin-top: 28px;
+                    @include font(14px);
+                }
+                &-item:hover {
+                    cursor: pointer;
+                    background: #05c8f8;
+                    color: #ffffff;
                 }
             }
         }
-        &_block {
+        &__block {
             max-width: 1305px;
             max-height: 331px;
             @media (max-width: 1300px) {
@@ -78,48 +78,48 @@
             @media (max-width: 311px) {
                 padding: 63px 45px 36px 45px;
             }
-        }
-        &_newsletters {
-            background: #ffffff;
-            max-width: 557px;
-            display: flex;
-            flex-direction: column;
-            @media (max-width: 565px) {
-                max-width: 466px;
-                max-height: 297px;
-            }
-            @media (max-width: 411px) {
-                max-width: 320px;
-            }
-            &_header {
-                color: #60606e;
-                @include font(24px);
-                padding: 21px 195px 0px 26px;
-                @media (max-width: 411px) {
-                    font-size: 13px;
-                    padding-right: 27px;
+            &__newsletters {
+                background: #ffffff;
+                max-width: 557px;
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 565px) {
+                    max-width: 466px;
+                    max-height: 297px;
                 }
-                &_text {
+                @media (max-width: 411px) {
+                    max-width: 320px;
+                }
+                &-header {
+                    color: #60606e;
+                    @include font(24px);
+                    padding: 21px 195px 0px 26px;
+                    @media (max-width: 411px) {
+                        font-size: 13px;
+                        padding-right: 27px;
+                    }
+                }
+                &-text {
                     font-family: "Open Sans", sans-serif;
                     font-size: 16px;
                     color: #999999;
                     padding: 18px 0px 28px 27px;
                 }
-                &_form {
+                &-form {
                     display: flex;
                     align-items: flex-end;
                     padding: 0px 26px 18px 20px;
                     @media (max-width: 411px) {
                         padding: 0px 6px 18px 6px;
                     }
-                    input {
+                    &__input {
                         padding: 23px 0px 19px 20px;
                         width: 375px;
                         border: 1px solid #cdcdcd;
                         font-size: 12px;
                         max-height: 51px;
                     }
-                    input::placeholder {
+                    &__input::placeholder {
                         color: #cdcdcd;
                         @include font(12px);
                     }
@@ -127,7 +127,7 @@
                         color: #cdcdcd;
                         @include font(12px);
                     }
-                    button {
+                    &__btn {
                         background: $primary-color;
                         color: #ffffff;
                         padding: 22px 47px 18px 49px;
@@ -136,7 +136,7 @@
                         max-height: 51px;
                         @include font(14px);
                     }
-                    button:hover {
+                    &__btn:hover {
                         cursor: pointer;
                         background: #05c8f8;
                         color: #ffffff;
