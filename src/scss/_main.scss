@@ -11,11 +11,8 @@
     @media (max-width: 1060px) {
         display: flex;
     }
-    &_wrapper_articles {
-        h2 {
-            font-size: 18px;
-        }
-        padding: 149px 0px 0px 79px;
+    &-wrapper__articles {
+        margin-left: 79px;
         @media (max-width: 520px) {
             padding: 149px 10px 0px 10px;
         }
@@ -25,7 +22,7 @@
         @media (max-width: 320px) {
             max-width: 320px;
         }
-        &_image {
+        &-image {
             min-width: 752px;
             min-height: 502px;
             padding-bottom: 29px;
@@ -43,7 +40,7 @@
             @media (max-width: 320px) {
                 max-width: 320px;
             }
-            img {
+            &__image {
                 width: 100%;
                 height: 100%;
                 @media (max-width: 320px) {
@@ -51,27 +48,28 @@
                 }
             }
         }
-        &_block_end {
-            padding-bottom: 152px;
+        &-block--end {
+            margin-bottom: 152px;
         }
-        .article1 {
+        &--first {
             grid-area: article1;
             max-width: 752px;
             max-height: 937px;
+            margin-top: 149px;
         }
-        .article2 {
+        &--second {
             grid-area: article2;
             padding-top: 101px;
             max-width: 752px;
             max-height: 937px;
         }
-        .article3 {
+        &--third {
             grid-area: article3;
             padding-top: 101px;
             max-width: 752px;
             max-height: 937px;
         }
-        &_block_form {
+        &-block__form {
             padding-bottom: 20px;
             max-height: 31px;
             .fa-comment-dots {
@@ -99,20 +97,20 @@
                 font-family: "Montserrat", sans-serif;
                 padding: 10px 0px 10px 0px;
             }
-            button {
-                background: $primary-color;
-                color: #ffffff;
-                @include font(14px);
-                border: none;
-                padding: 11px 23px 8px 16px;
-            }
-            button:hover {
-                background: #00c51b;
-                cursor: pointer;
-                color: blueviolet;
-            }
         }
-        &_block_header {
+        &-block__btn {
+            background: $primary-color;
+            color: #ffffff;
+            @include font(14px);
+            border: none;
+            padding: 11px 23px 8px 16px;
+        }
+        &-block__btn:hover {
+            background: #00c51b;
+            cursor: pointer;
+            color: blueviolet;
+        }
+        &-block__header {
             padding-bottom: 21px;
             padding-top: 20px;
             color: #60606e;
@@ -120,22 +118,21 @@
             font-family: "Montserrat", sans-serif;
             max-width: 399px;
         }
-        &_block_text {
+        &-block__text {
             padding-bottom: 30px;
             color: #999999;
             font-size: 14px;
             font-family: "Open Sans", sans-serif;
         }
-        &_block_link {
+        &-block__link {
             color: #60606e;
             font-family: "Montserrat", sans-serif;
             font-weight: bold;
-            a {
+            &-item {
                 text-decoration: none;
                 color: #60606e;
             }
-
-            a:hover {
+            &-item:hover {
                 color: $primary-color;
             }
         }
