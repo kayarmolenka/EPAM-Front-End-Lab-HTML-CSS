@@ -5,9 +5,10 @@
     }
     &-wrapper {
         max-width: 265px;
-        padding: 149px 0px 0px 193px;
+        margin-top: 149px;
+        margin-left: 193px;
         &__search {
-            padding-bottom: 50px;
+            margin-bottom: 50px;
             &-input {
                 background: #ececec;
                 border: none;
@@ -39,14 +40,14 @@
             }
         }
         &__posts {
-            padding-bottom: 52px;
+            margin-bottom: 52px;
             &__header {
                 color: #60606e;
                 font-family: "Montserrat", sans-serif;
                 font-size: 14px;
                 text-transform: uppercase;
                 font-weight: bold;
-                padding-bottom: 14px;
+                margin-bottom: 14px;
             }
             &__topics {
                 display: flex;
@@ -94,10 +95,6 @@
             &__postblock {
                 display: flex;
                 align-items: center;
-                :hover {
-                    transition: 0.5s;
-                    transform: scale(1.5);
-                }
                 &__image {
                     width: 81px;
                     height: 90px;
@@ -135,14 +132,13 @@
                 font-family: "Montserrat", sans-serif;
                 font-weight: bold;
                 text-transform: uppercase;
-                padding-bottom: 27px;
+                margin-bottom: 27px;
             }
             &__nav {
                 &--business {
                     width: 263px;
                     :hover {
                         background: $primary-color;
-                        opacity: 0.5;
                     }
                     &__link {
                         display: flex;
@@ -165,7 +161,6 @@
                     width: 263px;
                     :hover {
                         background: $primary-color;
-                        opacity: 0.5;
                     }
                     &__link {
                         display: flex;
@@ -190,7 +185,6 @@
                     width: 263px;
                     :hover {
                         background: $primary-color;
-                        opacity: 0.5;
                     }
                     &__link {
                         display: flex;
@@ -215,7 +209,6 @@
                     width: 263px;
                     :hover {
                         background: $primary-color;
-                        opacity: 0.5;
                     }
                     &__link {
                         display: flex;
@@ -239,7 +232,7 @@
             }
         }
         &__tags {
-            padding-bottom: 50px;
+            margin-bottom: 50px;
             &__header {
                 color: #60606e;
                 font-size: 14px;
@@ -247,11 +240,11 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 line-height: 11px;
-                padding-top: 49px;
+                margin-top: 49px;
             }
             &__containerbtn {
                 display: flex;
-                padding-top: 30px;
+                margin-top: 30px;
                 button {
                     color: #999999;
                     font-size: 12px;
@@ -318,14 +311,13 @@
                 font-family: "Montserrat", sans-serif;
                 font-weight: bold;
                 text-transform: uppercase;
-                padding-bottom: 27px;
+                margin-bottom: 27px;
             }
             &__nav {
                 &--business {
                     width: 263px;
                     :hover {
                         background: $primary-color;
-                        opacity: 0.5;
                     }
                     &__link {
                         display: flex;
@@ -348,7 +340,6 @@
                     width: 263px;
                     :hover {
                         background: $primary-color;
-                        opacity: 0.5;
                         animation-name: example;
                         animation-duration: 6s;
                         animation-timing-function: linear;
@@ -392,7 +383,6 @@
                     width: 263px;
                     :hover {
                         background: $primary-color;
-                        opacity: 0.5;
                     }
                     &__link {
                         display: flex;
@@ -417,7 +407,6 @@
                     width: 263px;
                     :hover {
                         background: $primary-color;
-                        opacity: 0.5;
                     }
                     &__link {
                         display: flex;

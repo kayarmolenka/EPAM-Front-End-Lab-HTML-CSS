@@ -1,16 +1,14 @@
 .article-newspost {
     grid-area: article_newspost;
     background: $primary-color;
-    max-height: 331px;
-    @media (max-width: 1040px) {
-        max-height: 1040px;
-        background: none;
+    @media (max-width: 1236px) {
+        height: 550px;
     }
     &__wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        @media (max-width: 1040px) {
+        justify-content: space-between;
+        @media (max-width: 1236px) {
             align-items: center;
             flex-direction: column;
         }
@@ -18,36 +16,33 @@
             align-items: start;
             flex-direction: column;
         }
+        @media (min-width: 1400px) {
+            justify-content: space-around;
+        }
         &__invitation {
             color: #ffffff;
             font-size: 30px;
             font-family: "Montserrat", sans-serif;
             max-width: 1305px;
             max-height: 331px;
-            padding: 51px 105px 130px 79px;
+            margin: 51px 0px 130px 79px;
             @media (max-width: 1270px) {
                 font-size: 24px;
                 background: $primary-color;
                 margin-bottom: 50px;
-            }
-            @media (max-width: 1000px) {
-                font-size: 28px;
             }
             &__header {
                 max-width: 487px;
                 max-height: 71px;
                 &-text {
                     font-size: 30px;
-                }
-                @media (max-width: 320px) {
-                    max-height: 320px;
+                    line-height: 46px;
                 }
             }
             &__btn {
                 &-item {
                     background: #ffffff;
                     width: 166px;
-                    height: 50px;
                     color: $primary-color;
                     padding: 21px 32px 18px 32px;
                     border: none;
@@ -64,29 +59,12 @@
         &__block {
             max-width: 1305px;
             max-height: 331px;
-            @media (max-width: 1300px) {
-                padding-right: 49px;
-            }
-            @media (max-width: 1040px) {
-                background: $primary-color;
-                padding: 63px 56px 36px 55px;
-            }
-            @media (max-width: 626px) {
-                max-height: 550px;
-                padding: 63px 8px 36px 9px;
-            }
-            @media (max-width: 311px) {
-                padding: 63px 45px 36px 45px;
-            }
+            margin-right: 40px;
             &__newsletters {
                 background: #ffffff;
                 max-width: 557px;
                 display: flex;
                 flex-direction: column;
-                @media (max-width: 565px) {
-                    max-width: 466px;
-                    max-height: 297px;
-                }
                 @media (max-width: 411px) {
                     max-width: 320px;
                 }

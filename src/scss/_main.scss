@@ -11,6 +11,9 @@
     @media (max-width: 1060px) {
         display: flex;
     }
+    @media (min-width: 1400px) {
+        grid-template-columns: 2fr 1fr;
+    }
     &-wrapper__articles {
         margin-left: 79px;
         @media (max-width: 520px) {
@@ -25,7 +28,7 @@
         &-image {
             min-width: 752px;
             min-height: 502px;
-            padding-bottom: 29px;
+            margin-bottom: 29px;
             @media (max-width: 1300px) {
                 min-width: 500px;
                 min-height: 250px;
@@ -53,21 +56,15 @@
         }
         &--first {
             grid-area: article1;
-            max-width: 752px;
-            max-height: 937px;
             margin-top: 149px;
         }
         &--second {
             grid-area: article2;
-            padding-top: 101px;
-            max-width: 752px;
-            max-height: 937px;
+            margin-top: 101px;
         }
         &--third {
             grid-area: article3;
-            padding-top: 101px;
-            max-width: 752px;
-            max-height: 937px;
+            margin-top: 101px;
         }
         &-block__form {
             padding-bottom: 20px;
@@ -89,6 +86,7 @@
             .fa-heart:hover {
                 color: $primary-color;
                 cursor: pointer;
+                transition: 1.5s;
             }
             .count_comment,
             .count_liked {
@@ -98,28 +96,25 @@
                 padding: 10px 0px 10px 0px;
             }
         }
-        &-block__btn {
+        &-block__data {
             background: $primary-color;
             color: #ffffff;
             @include font(14px);
             border: none;
             padding: 11px 23px 8px 16px;
+            display: inline;
         }
-        &-block__btn:hover {
-            background: #00c51b;
-            cursor: pointer;
-            color: blueviolet;
-        }
+
         &-block__header {
-            padding-bottom: 21px;
-            padding-top: 20px;
+            margin-bottom: 21px;
+            margin-top: 20px;
             color: #60606e;
-            font-size: 18px;
+            font-size: 12px;
             font-family: "Montserrat", sans-serif;
             max-width: 399px;
         }
         &-block__text {
-            padding-bottom: 30px;
+            margin-bottom: 30px;
             color: #999999;
             font-size: 14px;
             font-family: "Open Sans", sans-serif;
