@@ -1,0 +1,40 @@
+$primary-color: #7beec7;
+
+@mixin font($font-size) {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: $font-size;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "article_newspost article_newspost"
+        "footer footer";
+    @media (max-width: 411px) {
+        grid-template-columns: 411px;
+    }
+    @media (max-width: 320px) {
+        grid-template-columns: 320px;
+    }
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+}
+
+@import "header";
+@import "main";
+@import "article_newspost";
+@import "footer";
+@import "aside";

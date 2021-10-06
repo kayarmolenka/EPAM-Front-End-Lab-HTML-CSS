@@ -1,0 +1,74 @@
+.footer {
+    grid-area: footer;
+    padding: 50px 80px 48px 82px;
+    height: 178px;
+    max-height: 154px;
+    @media (max-width: 680px) {
+        padding: 50px 0px 0px 0px;
+    }
+    @media (max-width: 320px) {
+        max-width: 320px;
+    }
+    &-upper {
+        display: flex;
+        justify-content: space-between;
+        max-height: 56px;
+        @media (max-width: 320px) {
+            max-height: 130px;
+        }
+        &__nav {
+            max-width: 573px;
+            &__links {
+                display: flex;
+                @media (max-width: 1200px) {
+                    display: block;
+                }
+                &__link-item {
+                    text-decoration: none;
+                    color: #9a9a9a;
+                    font-size: 14px;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                }
+                a:hover {
+                    color: $primary-color;
+                }
+                :not(:first-of-type)::before {
+                    content: "-";
+                    color: #9a9a9a;
+                    margin: 0 13px 0 13px;
+                }
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+        &__creator {
+            color: #9a9a9a;
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            @media (max-width: 320px) {
+                font-size: 11px;
+            }
+        }
+    }
+    &-lower {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        &__link {
+            color: #999999;
+            margin-left: 18px;
+            :hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .footer-upper__nav__links :not(:first-of-type)::before {
+        content: none;
+    }
+}
